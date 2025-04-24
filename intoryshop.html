@@ -1,6 +1,9 @@
-  <!-- Video Player -->
-  <section class="player">
-    <div>
-      <iframe src="https://intory.watervend.monster" title="Intory Shop"</iframe>
-    </div>
-  </section>
+<script type = "text/javascript">
+function iHeight(){
+var iHeight = document.getElementById('myframe').contentWindow.document.body.scrollHeight;
+document.getElementById('myframe').height = iHeight;
+}
+</script>
+<body>
+   <iframe src="https://intory.watervend.monster" onload="iHeight();" id="myframe" style="width:100%; min-height:100px;"></iframe>
+</body>

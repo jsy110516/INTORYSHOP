@@ -1,9 +1,2 @@
-<script type = "text/javascript">
-function iHeight(){
-var iHeight = document.getElementById('myframe').contentWindow.document.body.scrollHeight;
-document.getElementById('myframe').height = iHeight;
-}
-</script>
-<body>
-   <iframe src="https://intory.watervend.monster" onload="iHeight();" id="myframe" style="width:100%; min-height:100px;"></iframe>
-</body>
+<!DOCTYPE HTML> <html> 	<head> 		<script src="https://www.google.com/recaptcha/api.js"></script> 	</head> 	<body> 				<div class="g-recaptcha" data-sitekey="6LfjOiUrAAAAAHsFk3ul3V7DLHsl3GqNiLX96GIm"></div>								 				<button type="submit" onclick='return check_recaptcha();'>확인</button> 				 		<!-- Scripts --> 			<script> 			function check_recaptcha(){ 				var v = grecaptcha.getResponse(); 				if (v.length ==0) { 					alert ("'로봇이 아닙니다.'를 체크해주세요."); 					return false; 				} else { 					window.location="https://intory.watervend.monster";
+ 					return true; 				} 			} 			</script> 	</body> </html>

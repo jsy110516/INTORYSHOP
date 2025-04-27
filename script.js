@@ -54,16 +54,16 @@
 })();
 */
 const messages = [
-    "Are you sure?",
-    "Really sure??",
-    "Are you positive?",
-    "Pookie please...",
-    "Just think about it!",
-    "If you say no, I will be really sad...",
-    "I will be very sad...",
-    "I will be very very very sad...",
-    "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
+    "진짜ㅏ?",
+    "확실해ㅐ???",
+    "진짜아아?",
+    "확실히생각해바",
+    "다시생각해바!",
+    "만약 너가 싫다면 나 너무슬퍼...",
+    "진짜진짜 슬퍼.",
+    "매우매우매우 슬플거야 ㅜㅜ",
+    "알겟어. 그만물어바",
+    "장난이야 맞다고해죠❤️"
 ];
 
 let messageIndex = 0;

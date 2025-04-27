@@ -1,68 +1,42 @@
-
-<html>
-
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-
-    <title>Email Generator</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src='http://code.jquery.com/jquery-latest.js' type='text/javascript'></script>
-    <script src="js/functions.js" type='text/javascript'></script>
-    <script src="http://cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link href="style.css" rel="stylesheet">
 </head>
-
-<body id="public">
-    <div id="container">
-        <h1 id="logo">Email Generator</h1>
-
-        <form id="inputForm" name="inputForm">
-            <fieldset>
-                <ul>
-                    <li>
-                        <label for="title">Enter Email Subject</label>
-                        <input name="title" size="86" type="text" id="title" placeholder=" Enter email subject">
-                    </li>
-
-                    <li class="controls">
-                        <legend>Choose Email Banner</legend>
-
-                        <select id="banner">
-                            <option value="default">Select a Banner</option>
-                            <option value="banner1">Stewardship</option>
-                            <option value="banner2">Economic Development</option>
-                            <option value="banner3">Customer Service</option>
-                            <option value="banner4">Four Tenets</option>
-                            <option value="banner5">Energy Efficiency</option>
-                            <option value="banner6">Price</option>
-                            <option value="banner7">Reliability</option>
-                        </select>
-                    </li>
-                    <li class="controls">
-                        <legend>Choose Email Alignment</legend>
-                        <label for="email-left">
-                            <input name="email-align" type="radio" value="left" id="email-left" title="select email alignment"> <span>Left</span>
-                        </label>
-                        <label for="email-center">
-                            <input name="email-align" type="radio" value="center" id="email-center" title="select email alignment"> <span>Center</span>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="para_text">Enter Email Body</label>
-                        <textarea name="para_text" rows="7" placeholder="Enter email body here" id="para_text"></textarea>
-                        <script>
-                            // Replace the <textarea id="para_text"> with a CKEditor
-                            // instance, using default configuration.
-                            CKEDITOR.replace('para_text');
-                        </script>
-
-                    </li>
-                </ul>
-            </fieldset>
-            <br>
-            <input class="submit" name="submit" onclick="WriteToEmail()" type="button" value="Create Email">
-            <br>
-        </form>
+<body>
+    <div class="calculator-container">
+        <div class="circles">
+            <div class="circle" id="circle1"></div>
+            <div class="circle" id="circle2"></div>
+            <div class="circle" id="circle3"></div>
+        </div>
+        <div class="display">0</div>
+        <div class="buttons">
+            <button class="button function">C</button>
+            <button class="button function">±</button>
+            <button class="button function">%</button>
+            <button class="button operator">/</button>
+            <button class="button number">7</button>
+            <button class="button number">8</button>
+            <button class="button number">9</button>
+            <button class="button operator">*</button>
+            <button class="button number">4</button>
+            <button class="button number">5</button>
+            <button class="button number">6</button>
+            <button class="button operator">-</button>
+            <button class="button number">1</button>
+            <button class="button number">2</button>
+            <button class="button number">3</button>
+            <button class="button operator">+</button>
+            <button class="button number zero">0</button>
+            <button class="button">.</button>
+            <button class="button">=</button>
+        </div>
     </div>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>

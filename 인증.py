@@ -114,4 +114,4 @@ async def authmsg(interaction: discord.Interaction, 제목: str, 본문: str):
  
     await interaction.response.send_message(embed=embed, view=view)
  
-bot.run('봇 토큰 여기다가 넣어주세요!')
+bot.run('MTM2NDU2OTk3NzE0Njk2NjExNg.Gj7f25.1tfl09rV_dd6XtCfAklqTPRsPWPs7RMekQeO58')

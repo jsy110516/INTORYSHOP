@@ -1,1 +1,1 @@
-token = "봇토큰"
+token = "MTM3MzIxMTA3OTEwMjE3MzI0NQ.G0y2wr._r1tpys9USp6Arr0G3Cd6VWrjyzXkZ_8TZfHJk"

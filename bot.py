@@ -36,4 +36,4 @@ async def on_interaction(interaction: discord.Interaction):
         elif interaction.data["custom_id"] == "bug_inquiry":
             await interaction.response.send_message("버그 문의 티켓이 생성되었습니다!", ephemeral=True)
 
-bot.run(setting.token)
+bot.run("MTM3MzIxMTA3OTEwMjE3MzI0NQ.GwZ9hf.iEgdlA4zjuNva5zKg3Nu1D-HVj8qMqqxxxjW4k")
